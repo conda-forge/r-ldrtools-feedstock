@@ -1,11 +1,11 @@
-About r-ldrtools
-================
+About r-ldrtools-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ldrtools-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=LDRTools
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ldrtools-feedstock/blob/main/LICENSE.txt)
 
 Summary: Linear dimension reduction subspaces can be uniquely defined using orthogonal projection matrices. This package provides tools to compute distances between such subspaces and to compute the average subspace. For details see Liski, E.Nordhausen K., Oja H., Ruiz-Gazen A. (2016) Combining Linear Dimension Reduction Subspaces <doi:10.1007/978-81-322-3643-6_7>.
 
