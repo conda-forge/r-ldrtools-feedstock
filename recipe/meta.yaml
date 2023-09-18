@@ -1,4 +1,4 @@
-{% set version = '0.2-1' %}
+{% set version = "0.2-2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/LDRTools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/LDRTools/LDRTools_{{ version }}.tar.gz
-  sha256: 8e9b9f6b7b12897d73edf95ce06e8e433465efe9341ce5201ff17a4daf775917
+  sha256: cccceab012b7bab8957035a41799917491ac68259882cb734349f5ea7fbe8652
 
 build:
-  merge_build_host: True  # [win]
-  number: 3
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -37,10 +37,8 @@ test:
 about:
   home: https://CRAN.R-project.org/package=LDRTools
   license: GPL-2.0-or-later
-  summary: Linear dimension reduction subspaces can be uniquely defined using orthogonal projection
-    matrices. This package provides tools to compute distances between such subspaces
-    and to compute the average subspace. For details see Liski, E.Nordhausen K., Oja
-    H., Ruiz-Gazen A. (2016) Combining Linear Dimension Reduction Subspaces <doi:10.1007/978-81-322-3643-6_7>.
+  summary: Linear dimension reduction subspaces can be uniquely defined using orthogonal projection matrices. This package provides tools to compute distances between such subspaces and to compute the average subspace. For details see Liski, E.Nordhausen K., Oja H., Ruiz-Gazen A. (2016) Combining Linear Dimension Reduction
+    Subspaces <doi:10.1007/978-81-322-3643-6_7>.
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
