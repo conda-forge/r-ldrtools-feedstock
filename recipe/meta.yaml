@@ -1,6 +1,5 @@
 {% set version = "0.2-2" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-ldrtools
@@ -13,8 +12,7 @@ source:
   sha256: cccceab012b7bab8957035a41799917491ac68259882cb734349f5ea7fbe8652
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
